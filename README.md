@@ -1,7 +1,4 @@
-# X Dci Theme
+# {x}DCI Theme
 
-The **X Dci** Theme is for [Grav CMS](http://github.com/getgrav/grav).  This README.md file should be modified to describe the features, installation, configuration, and general usage of this theme.
+This is a theme for [Grav CMS](http://github.com/getgrav/grav).
 
-## Description
-
-Theme Developed for xDCI site
