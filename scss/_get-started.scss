@@ -1,0 +1,21 @@
+.get-started {
+    .xdci-get-started-button {
+        border: 1px solid #0ff;
+        display: block;
+        width: 10em;
+        background-color: #dd965f;
+        color: #fff;
+        text-align: center;
+    	font-size: 1.25em;
+        border: solid 1px;
+        padding: 1em 1.5em;
+        margin: 0 auto;
+        transition:
+        	background-color 250ms,
+        	color 250ms;
+    	&:hover {
+    	    background-color: #fff;
+    	    color: #e6a164;
+    	}
+    }
+}

@@ -1,0 +1,12 @@
+.about {
+	background-color: #ec5e66;
+	font-size: 1.25rem;
+	color: #fff;
+	text-align: center;
+}
+
+@media (max-width: 400px) {
+	.about {
+		font-size: 1rem;
+	}
+}

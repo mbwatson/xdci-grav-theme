@@ -1,0 +1,76 @@
+nav {
+    font-size: 1em;
+    padding: 1em;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        padding-right: 0 2em;
+        align-items: center;
+        .brand {
+            .logo {
+                width: 135px;
+            }
+        }
+        ul {
+            flex: 1;
+            text-align: right;
+            letter-spacing: -1em;
+            margin: 0;
+            padding: 0;
+           li {
+                display: inline-block;
+                letter-spacing: normal;
+                a {
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 1em;
+                    padding: 1em 1.5em;
+                    border-bottom: 1px solid transparent;
+                    &::after {
+                        content: '';
+                        color: #ddd;
+                        height: 0;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        background-color: rgba(228,158,98,1);
+                        transform: scale(0, 1);
+                        opacity: 0;
+                        transition:
+                            height 250ms,
+                            transform 250ms ease-out,
+                            opacity 450ms;
+                    }
+                    &:hover::after {
+                        height: 3px;
+                        transform: scale(1, 1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        .wrapper {
+            flex-direction: column;
+           .brand {
+                .logo {
+                    width: 90%;
+                    padding: 1em 0;
+                }
+            }
+            ul {
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+                width: 95vw;
+                display: flex;
+                justify-content: center;
+                li {}
+            }
+        }
+    }
+}

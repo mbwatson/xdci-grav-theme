@@ -1,0 +1,33 @@
+.communities .wrapper {
+	display: flex;
+	padding-top: 60px;
+	flex-flow: row nowrap;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+	.use-case {
+		* {
+			text-align: center;
+		}
+		flex: 1;
+		// max-width: 600px;
+		background-color: #eee;
+		padding: 1em 2em;
+		margin: 1em 1em;
+		.use-case__title {
+		}
+		.use-case__problems {
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+		}
+		.use-case__technologies {
+			img {
+				width: 100px;
+				margin: 0 1em;
+			}
+		}
+		.use-case__pis {}
+	}
+}

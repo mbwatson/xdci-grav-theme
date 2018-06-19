@@ -1,0 +1,38 @@
+.title {
+	background-color: #fff;
+	h1, h2 {
+		text-align: center;
+		font-weight: lighter;
+		padding: 0.25rem;
+		margin: 0;
+	}
+	h1 {
+		font-size: 2.7rem;
+		border-bottom: 1px solid #ccc;
+	}
+	h2 {
+		font-size: 2.3rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.title {
+		h1 {
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 1.7rem;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.title {
+		h1 {
+			font-size: 1.5rem;
+		}
+		h2 {
+			font-size: 1.25rem;
+		}
+	}
+}
